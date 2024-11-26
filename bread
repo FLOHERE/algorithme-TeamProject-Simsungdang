@@ -1,0 +1,101 @@
+package bread;
+import java.util.Stack;
+import java.util.Scanner;
+
+
+public class breadd {
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int top = 1;
+		Stack<Integer> sand= new Stack<>(); 
+		Stack<Integer> cake= new Stack<>(); 
+		Stack<Integer> dan= new Stack<>(); 
+		Stack<Integer> sobo= new Stack<>(); 
+		Stack<Integer> pizza= new Stack<>(); 
+		final int breadSize = 20;
+		//반복문 사용해서 스택 채우기 
+		for (int i = 0; i<breadSize; i++) { //재귀 사용 가능할 거 같은뎅
+			sand.push(i+1);
+			cake.push(i+1);
+			dan.push(i+1);
+			sobo.push(i+1);
+			pizza.push(i+1);
+			
+		}
+		
+
+		
+		
+	while(true){
+			System.out.println("심성당에 오신걸 환영합니다");
+			System.out.println("--------메뉴---------");
+			System.out.println("1. 샌드위치 ");
+			System.out.println("2. 딸기케이크 ");
+			System.out.println("3. 튀김소보로 ");
+			System.out.println("4. 단팥빵 ");
+			System.out.println("5. 피자빵");
+			System.out.println("--------메뉴---------");
+			System.out.println("1. 남은 수량 보기");
+			System.out.println("2. 빵 선택");
+			System.out.println("3. 주문 종료");
+			System.out.println("메뉴를 선택해주세요 : ");
+			int menu = scanner.nextInt();
+			scanner.nextLine();
+			
+			switch(menu) { 
+			case 1: //남은 수량 보기
+				System.out.println("남은 샌드위치 수량 : " + sand.size());
+				System.out.println("남은 딸기케이크 수량 : " + cake.size());
+				System.out.println("남은 튀김소보로 수량 : " + sobo.size());
+				System.out.println("남은 단팥빵 수량 : " + dan.size());
+				System.out.println("남은 피자빵 수량 : " + pizza.size());
+				break;
+				
+			case 2 : //빵 선택하기
+				System.out.println("--------메뉴---------");
+				System.out.println("1. 샌드위치 ");
+				System.out.println("2. 딸기케이크 ");
+				System.out.println("3. 튀김소보로 ");
+				System.out.println("4. 단팥빵 ");
+				System.out.println("5. 피자빵");
+				System.out.println("--------메뉴---------");
+				System.out.println("빵을 선택해주세요 : ");
+				int bread = scanner.nextInt();
+				scanner.nextLine();
+				
+				switch(bread) {
+				case 1: //샌드위치 선택
+					System.out.println("샌드위치를 선택하셨습니다.");
+					System.out.println("수량을 입력해주세요 : ");
+					int sandbread = scanner.nextInt();
+					scanner.nextLine();
+				case 2: //딸기케이크 선택
+					System.out.println("딸기케이크를 선택하셨습니다.");
+					System.out.println("수량을 입력해주세요 : ");
+					int cakebread = scanner.nextInt();
+					scanner.nextLine();
+				case 3: //튀김소보로 선택
+					System.out.println("튀김소보로를 선택하셨습니다.");
+					System.out.println("수량을 입력해주세요 : ");
+					int sobobread = scanner.nextInt();
+					scanner.nextLine();
+				case 4: //단팥빵 선택
+					System.out.println("단팥빵를 선택하셨습니다.");
+					System.out.println("수량을 입력해주세요 : ");
+					int danbread = scanner.nextInt();
+					scanner.nextLine();
+				case 5: //피자빵 선택
+					System.out.println("피자빵를 선택하셨습니다.");
+					System.out.println("수량을 입력해주세요 : ");
+					int pizzabread = scanner.nextInt();
+					scanner.nextLine();
+				}
+			case 3 : //주문종료
+				System.out.println("주문이 종료되었습니다. 안녕히 가십시오");
+				//힝
+				
+			}
+			break;
+		}
+	}
+}
