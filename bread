@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 
 public class breadd {
+	public static void finish() {
+		System.out.println("주문이 종료되었습니다. 안녕히 가십시오");
+	}
 	public static void main (String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int top = 1;
@@ -21,9 +24,9 @@ public class breadd {
 			sobo.push(i+1);
 			pizza.push(i+1);
 			
+			
 		}
 		
-
 		
 		
 	while(true){
@@ -65,7 +68,7 @@ public class breadd {
 				
 				switch(bread) {
 				case 1: //샌드위치 선택
-					System.out.println("샌드위치를 선택하셨습니다.");
+					System.out.println("샌드위치를 선택하셨습니다. 남은 수량 : " + sand.size());
 					System.out.println("수량을 입력해주세요 : ");
 					int sandbread = scanner.nextInt();
 					scanner.nextLine();
@@ -91,8 +94,7 @@ public class breadd {
 					scanner.nextLine();
 				}
 			case 3 : //주문종료
-				System.out.println("주문이 종료되었습니다. 안녕히 가십시오");
-				//힝
+				finish();
 				
 			}
 			break;
