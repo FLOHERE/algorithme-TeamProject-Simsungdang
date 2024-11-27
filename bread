@@ -41,11 +41,7 @@ public class breadtest {
 			
 			switch(menu) { 
 			case 1: //남은 수량 보기
-				System.out.println("남은 샌드위치 수량 : " + sand.size());
-				System.out.println("남은 딸기케이크 수량 : " + cake.size());
-				System.out.println("남은 튀김소보로 수량 : " + sobo.size());
-				System.out.println("남은 단팥빵 수량 : " + dan.size());
-				System.out.println("남은 피자빵 수량 : " + pizza.size());
+				
 				break;
 				
 			case 2 : //빵 선택하기
