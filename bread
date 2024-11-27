@@ -73,22 +73,22 @@ public class breadd {
 					int sandbread = scanner.nextInt();
 					scanner.nextLine();
 				case 2: //딸기케이크 선택
-					System.out.println("딸기케이크를 선택하셨습니다.");
+					System.out.println("딸기케이크를 선택하셨습니다. 남은 수량 : " + cake.size());
 					System.out.println("수량을 입력해주세요 : ");
 					int cakebread = scanner.nextInt();
 					scanner.nextLine();
 				case 3: //튀김소보로 선택
-					System.out.println("튀김소보로를 선택하셨습니다.");
+					System.out.println("튀김소보로를 선택하셨습니다. 남은 수량 : " + sobo.size());
 					System.out.println("수량을 입력해주세요 : ");
 					int sobobread = scanner.nextInt();
 					scanner.nextLine();
 				case 4: //단팥빵 선택
-					System.out.println("단팥빵를 선택하셨습니다.");
+					System.out.println("단팥빵를 선택하셨습니다. 남은 수량 : " + dan.size());
 					System.out.println("수량을 입력해주세요 : ");
 					int danbread = scanner.nextInt();
 					scanner.nextLine();
 				case 5: //피자빵 선택
-					System.out.println("피자빵를 선택하셨습니다.");
+					System.out.println("피자빵를 선택하셨습니다. 남은 수량 : " + pizza.size());
 					System.out.println("수량을 입력해주세요 : ");
 					int pizzabread = scanner.nextInt();
 					scanner.nextLine();
